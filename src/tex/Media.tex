@@ -1,0 +1,59 @@
+\documentclass[../StudioOperationGuide.tex]{subfiles}
+\begin{document}
+
+\chapter{Media}
+TODO: Describe differences in audio file formats.
+%\hypertarget{media}{%
+%\section{Media}\label{media}}
+
+%\hypertarget{audio-file-formats}{%
+%\subsection{Audio file formats}\label{audio-file-formats}}
+
+Audio files have been stored in three different formats. The following
+table will show the main differences between the formats used at the
+station.
+
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1415}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2584}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2001}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Extension
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%Compression
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%Lossiness
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%Quality
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%File size
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%.flac & Compressed data file & Lossless format & Full quality & Medium
+%file size. \\
+%.mp3 & Compressed audio file & Lossy format & Variable quality &
+%Smallest file size \\
+%.wav & Uncompressed file & Lossless format & Full quality & Largest file
+%size \\
+%\bottomrule()
+%\end{longtable}
+
+Note the difference between compressed audio and compressed data. With
+compressed audio, the audio information itself is altered to provide a
+smaller file size, but it results in a loss of audio quality. In
+contrast, compressed data means that while the data that makes up the
+audio is compressed, when the data is converted back into audio by the
+computer, the quality of the audio is unaffected.
+
+It is therefore recommended to use the .flac file format for final
+playout audio where possible as it offers the best compromise between
+file size and audio quality. Audio editing should always be performed
+using .wav format files.
+
+.mp3 files should only be used if that is how the file was supplied.
+
+\end{document}
