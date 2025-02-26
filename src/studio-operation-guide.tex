@@ -1,0 +1,64 @@
+\documentclass[a4paper,draft,showtrims]{memoir}
+\usepackage[]{nwfm_style}
+\usepackage{graphicx}
+\usepackage{lipsum}
+% Bound instruction manuals are more commonly finished to 4.25x5.5, 5.5x8.5, 6x9, or 8.5x11.
+
+%\counterwithin{page}{section}
+\begin{document}
+
+% Front Matter ================================
+% Element                       Page          Folio Leaf
+% Half-title page               recto (right)   no    1
+% Frontispiece, etc., or blank  verso (left)    no    1
+% Title page                    recto           no    2
+% Copyright page                verso           no    2
+% Dedication                    recto           no    3
+% Blank                         verso           no    3
+% Table of Contents             recto           yes   3 or 4
+% List of Figures               recto or verso  yes   3 or 4
+% List of Tables                recto or verso  yes   etc.
+% Foreword                      recto or verso  yes   etc.
+% Preface                       recto or verso  yes   etc.
+% Acknowledgements              recto or verso  yes   etc.
+% Introduction                  recto or verso  yes   etc.
+% Abbreviations, etc            recto or verso  yes   etc.
+\begin{titlingpage}
+	\title{Northwest FM Studio Operation Guide}
+	\author{Peter McMurray}
+	\date{\today}
+	\maketitle
+\end{titlingpage}
+
+\frontmatter
+	\tableofcontents
+	%\listoffigures
+	%\listoftables
+
+\mainmatter
+	%\counterwithin{page}{chapter}
+	\chapterstyle{section}
+	% Main Matter ================================
+	% Parts
+	% Chapters
+	% Sections
+	% Appendices
+	\subfile{sections/program.tex}
+	\subfile{sections/studio.tex}
+	\subfile{sections/wheatstone-console.tex}
+	\subfile{sections/jazler-playout.tex}
+	\subfile{sections/media.tex}
+	\subfile{sections/outside-broadcast.tex}
+	\subfile{sections/yealink-phones.tex}
+	\subfile{sections/remote.tex}
+	\subfile{sections/spots.tex}
+
+\backmatter
+	% Back Matter ================================
+	% Appendices (Unnumbered)
+	% Notes
+	% Glossary
+	% Abbreviations, etc (Alternative location)
+	% Index
+
+\end{document}
